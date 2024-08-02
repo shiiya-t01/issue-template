@@ -13,7 +13,7 @@ body:
   - type: textarea
     attibutes:
       label: ログイン情報
-      description: テスト時に使用したユーザーIDとパスワード
+      description: テスト時に使用したユーザーとパスワード
     validations:
       required: true
 
