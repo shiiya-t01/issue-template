@@ -1,9 +1,42 @@
 name: テスト（表示エラー）
 description: テスト時の表示エラー起票
 labels:
-  - bug
+  - ":test_tube: 表示テスト"
+  - ":art:🚑 デザインUI/UX"
 title: 機能ID_エラー概要
 body:
+  - type: dropdown
+    attributes:
+      label: 観点表との対応
+      description: 観点表で満たせていないものを選択（複数選択可）
+      multiple: true
+      options:
+        - 文字の見やすさ
+        - 文字切れなし
+        - 変な改行なし
+        - リンク＆ボタン正常
+        - テキスト入力正常
+        - ラジオボタン正常選択
+        - チェックボックス正常選択
+        - プルダウン正常選択
+        - その他（エラー詳細に記入）
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: エラー詳細
+      description: 発生しているエラーの詳細
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: スクリーンショット
+      description: 発生しているエラーのスクリーンショット
+    validations:
+      required: true
+
   - type: textarea
     attributes:
       label: エラー発生箇所
@@ -11,10 +44,17 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     attributes:
-      label: ログイン情報
-      description: テスト時に使用したユーザーIDとパスワード
+      label: ユーザーID
+      description: テスト時に使用したユーザーID
+    validations:
+      required: true
+
+    - type: input
+    attributes:
+      label: パスワード
+      description: テスト時に使用したパスワード
     validations:
       required: true
 
@@ -31,23 +71,7 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    attributes:
-      label: 観点表との対応
-      description: 観点表で満たせていないものを選択（複数選択可）
-      multiple: true
-      options:
-        - 文字の見やすさ
-        - 文字切れなし
-        - 変な改行なし
-        - リンク＆ボタン正常
-        - テキスト入力正常
-        - ラジオボタン正常選択
-        - チェックボックス正常選択
-        - プルダウン正常選択
-        - その他（詳細を補足事項に記載）
-    validations:
-      required: true
+  
 
   - type: textarea
     attributes:
