@@ -9,14 +9,14 @@ body:
       description: エラーが発生しているページのURL
     validations:
       required: true
-
+    
   - type: textarea
     attibutes:
       label: ログイン情報
       description: テスト時に使用したユーザーとパスワード
     validations:
       required: true
-
+    
   - type: dropdown
     attributes:
       label: スマホ機種
@@ -27,7 +27,7 @@ body:
         - Android
     validations:
       required: true
-      
+    
   - type: dropdown
     attributes:
       label: 観点表との対応
@@ -38,7 +38,7 @@ body:
         - b
         - c
         - その他（詳細を補足事項に記載してください）
-
+    
   - type: textarea
     attibutes:
       label: 補足事項
