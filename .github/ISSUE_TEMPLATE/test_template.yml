@@ -42,5 +42,6 @@ body:
   - type: textarea
     attibutes:
       label: 補足事項
+      description: 
     validations:
       required: false
