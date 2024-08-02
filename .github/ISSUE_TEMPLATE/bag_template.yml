@@ -1,7 +1,7 @@
 name: テスト（表示エラー）
 description: テスト時の表示エラー起票
 labels:
-  - bug
+  - ":art:🚑 デザインUI/UX"
 title: 機能ID_エラー概要
 body:
   - type: dropdown
@@ -43,12 +43,12 @@ body:
     validations:
       required: true
 
-  # - type: input
-  #   attributes:
-  #     label: ユーザーID
-  #     description: テスト時に使用したユーザーID
-  #   validations:
-  #     required: true
+  - type: input
+    attributes:
+      label: ユーザーID
+      description: テスト時に使用したユーザーID
+    validations:
+      required: true
 
   - type: input
     attributes:
