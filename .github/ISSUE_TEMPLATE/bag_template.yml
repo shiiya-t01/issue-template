@@ -1,0 +1,46 @@
+name: テスト（サーバーエラー）
+description: テスト時のサーバーエラー起票
+labels:
+  - bug
+title: 機能ID_エラー概要
+body:
+  - type: textarea
+    attributes:
+      label: エラー概要
+      description: エラー発生の経緯などを簡潔に記入
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: エラー発生箇所
+      description: エラーが発生しているページのURL
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ログイン情報
+      description: テスト時に使用したユーザーIDとパスワード
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 検証環境
+      description: テスト時に使用した環境
+      multiple: false
+      options:
+        - iPhone
+        - Android
+        - Firefox
+        - Edge
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 補足事項
+      description: 
+    validations:
+      required: false
