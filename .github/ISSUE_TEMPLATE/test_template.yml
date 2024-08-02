@@ -51,7 +51,7 @@ body:
     validations:
       required: true
 
-    - type: input
+  - type: input
     attributes:
       label: パスワード
       description: テスト時に使用したパスワード
