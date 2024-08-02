@@ -17,6 +17,18 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    attributes:
+      label: 観点表
+      description: 観点表で満たせていないものを選択
+      multiple: true
+      options:
+        - a
+        - b
+        - c
+        - other
+      multiples: 
+
   - type: textarea
     attributes:
       label: Additional information
