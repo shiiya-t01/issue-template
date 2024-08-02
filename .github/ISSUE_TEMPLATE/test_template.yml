@@ -9,5 +9,39 @@ body:
       description: エラーが発生しているページのURL
     validations:
       required: true
+     - type: textarea
+    attibutes:
+      label: ログイン情報
+      description: テスト時に使用したユーザーとパスワード
+    validations:
+      required: true
     
+  - type: dropdown
+    attributes:
+      label: スマホ機種
+      description: テスト時に使用したスマートフォンの機種
+      multiple: false
+      options:
+        - iPhone
+        - Android
+    validations:
+      required: true
+    
+  - type: dropdown
+    attributes:
+      label: 観点表との対応
+      description: 観点表で満たせていないものを選択
+      multiple: true
+      options:
+        - a
+        - b
+        - c
+        - その他（詳細を補足事項に記載してください）
+    
+  - type: textarea
+    attibutes:
+      label: 補足事項
+      description: 
+    validations:
+      required: false
  
