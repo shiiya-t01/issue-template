@@ -9,7 +9,8 @@ body:
       description: エラーが発生しているページのURL
     validations:
       required: true
-     - type: textarea
+  
+  - type: textarea
     attibutes:
       label: ログイン情報
       description: テスト時に使用したユーザーとパスワード
