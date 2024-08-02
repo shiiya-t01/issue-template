@@ -23,7 +23,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     attributes:
       label: エラー詳細
       description: 発生しているエラーの詳細
@@ -44,12 +44,12 @@ body:
     validations:
       required: true
 
-  - type: input
-    attributes:
-      label: ユーザーID
-      description: テスト時に使用したユーザーID
-    validations:
-      required: true
+  # - type: input
+  #   attributes:
+  #     label: ユーザーID
+  #     description: テスト時に使用したユーザーID
+  #   validations:
+  #     required: true
 
   - type: input
     attributes:
