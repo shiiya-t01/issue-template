@@ -23,7 +23,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     attributes:
       label: エラー詳細
       description: 発生しているエラーの詳細
