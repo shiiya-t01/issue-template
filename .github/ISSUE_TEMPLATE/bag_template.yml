@@ -1,34 +1,16 @@
-name: テスト（表aエラー）
-description: テスト時の表示エラー起票
+name: テスト（サーバーエラー）
+description: テスト時のサーバーエラー起票
 labels:
-  - ":art:🚑 デザインUI/UX"
+  - 🧪 表示テスト, ⚠バグ
 title: 機能ID_エラー概要
 body:
-  - type: dropdown
+  - type: textarea
     attributes:
-      label: 観点表との対応
-      description: 観点表で満たせていないものを選択（複数選択可）
-      multiple: true
-      options:
-        - 文字の見やすさ
-        - 文字切れなし
-        - 変な改行なし
-        - リンク＆ボタン正常
-        - テキスト入力正常
-        - ラジオボタン正常選択
-        - チェックボックス正常選択
-        - プルダウン正常選択
-        - その他（エラー詳細に記入）
+      label: エラー概要
+      description: エラー発生の経緯などを簡潔に記入
     validations:
       required: true
 
-  - type: textarea
-    attributes:
-      label: エラー詳細
-      description: 発生しているエラーの詳細
-    validations:
-      required: true
-  
   - type: textarea
     attributes:
       label: スクリーンショット
