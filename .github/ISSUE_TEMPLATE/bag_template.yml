@@ -2,6 +2,7 @@ name: テスト（サーバーエラー）
 description: テスト時のサーバーエラー起票
 labels:
   - bug
+  - bug
 title: 機能ID_エラー概要
 body:
   - type: textarea
