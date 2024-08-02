@@ -3,15 +3,6 @@ description: テスト時のエラー起票
 labels:
   - bug
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       **HUBBERS!!** This is the github/docs open source repo. You may want to open an issue in the internal-only github/docs-content repo instead.
-
-  #       * For questions, ask in [Discussions](https://github.com/github/docs/discussions).
-  #       * Before you file an issue read the [Contributing guide](https://github.com/github/docs/blob/main/CONTRIBUTING.md).
-  #       * Check to make sure someone hasn't already opened a similar [issue](https://github.com/github/docs/issues).
-
   - type: textarea
     attributes:
       label: エラー概要
@@ -21,11 +12,8 @@ body:
 
   - type: textarea
     attributes:
-      label: What part(s) of the article would you like to see updated?
-      description: |
-        - Give as much detail as you can to help us understand the change you want to see. 
-        - Why should the docs be changed? What use cases does it support? 
-        - What is the expected outcome?
+      label: エラー発生箇所
+      description: エラーが発生しているページのURL
     validations:
       required: true
 
