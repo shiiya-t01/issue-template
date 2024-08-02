@@ -5,32 +5,42 @@ labels:
 body:
   - type: textarea
     attributes:
-      label: エラー概要
-      description: 
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
       label: エラー発生箇所
       description: エラーが発生しているページのURL
     validations:
       required: true
 
+  - type: textarea
+    attibutes:
+      label: ログイン情報
+      description: テスト時に使用したユーザーIDとパスワード
+    validations:
+      required: true
+
   - type: dropdown
     attributes:
-      label: 観点表
+      label: スマホ機種
+      description: テスト時に使用したスマートフォンの機種
+      multiple: false
+      options:
+        - iPhone
+        - Android
+    validations:
+      required: true
+      
+  - type: dropdown
+    attributes:
+      label: 観点表との対応
       description: 観点表で満たせていないものを選択
       multiple: true
       options:
         - a
         - b
         - c
-        - other
+        - その他（詳細を補足事項に記載してください）
 
   - type: textarea
-    attributes:
-      label: Additional information
-      description: Add any other context or screenshots about the feature request here.
+    attibutes:
+      label: 補足事項
     validations:
       required: false
