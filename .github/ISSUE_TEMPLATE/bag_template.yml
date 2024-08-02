@@ -70,8 +70,6 @@ body:
     validations:
       required: true
 
-  
-
   - type: textarea
     attributes:
       label: 補足事項
