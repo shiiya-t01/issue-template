@@ -34,12 +34,17 @@ body:
   - type: dropdown
     attributes:
       label: 観点表との対応
-      description: 観点表で満たせていないものを選択
+      description: 観点表で満たせていないものを選択（複数選択可）
       multiple: true
       options:
-        - a
-        - b
-        - c
+        - 文字の見やすさ
+        - 文字切れなし
+        - 変な改行なし
+        - リンク＆ボタン正常
+        - テキスト入力正常
+        - ラジオボタン正常選択
+        - チェックボックス正常選択
+        - プルダウン正常選択
         - その他（詳細を補足事項に記載）
     validations:
       required: true
