@@ -36,7 +36,7 @@ body:
         - c
         - その他（詳細を補足事項に記載してください）
   - type: textarea
-    attibutes:
+    attributes:
       label: 補足事項
       description: 
     validations:
