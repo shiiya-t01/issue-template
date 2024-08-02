@@ -1,4 +1,4 @@
-name: スマホテスト（表示エラー）
+name: テスト（表示エラー）
 description: テスト時の表示エラー起票
 labels:
   - bug
@@ -20,12 +20,14 @@ body:
 
   - type: dropdown
     attributes:
-      label: スマホ機種
-      description: テスト時に使用したスマートフォンの機種
+      label: 検証環境
+      description: テスト時に使用した環境
       multiple: false
       options:
         - iPhone
         - Android
+        - Firefox
+        - Edge
     validations:
       required: true
 
@@ -38,10 +40,10 @@ body:
         - a
         - b
         - c
-        - その他（詳細を補足事項に記載してください）
+        - その他（詳細を補足事項に記載）
     validations:
       required: true
-      
+
   - type: textarea
     attributes:
       label: 補足事項
