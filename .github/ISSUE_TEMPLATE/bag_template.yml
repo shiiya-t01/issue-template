@@ -1,6 +1,7 @@
 name: テスト（表示エラー）
 description: テスト時の表示エラー起票
 labels:
+  - bug
 title: 機能ID_エラー概要
 body:
   - type: dropdown
