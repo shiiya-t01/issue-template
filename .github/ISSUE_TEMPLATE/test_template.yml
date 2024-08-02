@@ -10,7 +10,7 @@ body:
     validations:
       required: true
   - type: textarea
-    attibutes:
+    attributes:
       label: ログイン情報
       description: テスト時に使用したユーザーとパスワード
     validations:
